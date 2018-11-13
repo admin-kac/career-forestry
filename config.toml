@@ -1,6 +1,6 @@
 baseURL = "https://careers-md.netlify.com/"
 languageCode = "en-us"
-title = "Careers site for MD"
+title = "Careers site - Forestry"
 
 
 [menu]
@@ -13,6 +13,10 @@ title = "Careers site for MD"
     weight = 2
     name = "Blogs"
     url = "/post"
+  [[menu.header]]
+    weight = 3
+    name = "Open Positions"
+    url = "/positions-page"
 
     
 # Parameters passed inside pages
