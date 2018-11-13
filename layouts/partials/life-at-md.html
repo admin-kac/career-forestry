@@ -1,0 +1,67 @@
+{{ partial "header.html" . }}
+
+<section class="home-banner">
+    <img src="{{ .Site.BaseURL }}{{ .Site.Data.lifeatmd.bannerimg }}">
+</section>
+
+<section class="ceo-blockquote">
+  <div class="container-fluid wow fadeInUp" data-wow-delay="0.3s">
+      <div class="row">
+          <div class="col-xs-12">
+            <p>{{ .Site.Data.lifeatmd.title | safeHTML }}</p>
+            <span class="writer-name">{{ .Site.Data.lifeatmd.paragraph }}</span>
+            <span class="writer-name">{{ .Site.Data.lifeatmd.content }}</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="image-content-block">
+  <div class="container-full">
+      <div class="row">
+          <div style="display: none;" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 image-block wow slideInLeftSmooth" data-wow-delay="0.1s">
+              <img src="{{ .Site.BaseURL }}{{ .Site.Data.lifeatmd.image }}">
+          </div>          
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 image-block wow slideInLeftSmooth" data-wow-delay="0.1s">
+              <div id="lifeatmd-video" class="gallery-image-video video-block">
+                  <iframe height="100%" src="{{ .Site.Data.lifeatmd.iframe }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <a class="iframe-popup" href="{{ .Site.Data.lifeatmd.iframe }}"></a>
+              </div>
+          </div>
+
+          <div id="lifeatmd-content" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 content-block wow slideInRightSmooth" data-wow-delay="0.1s">
+            {{ range .Site.Data.lifeatmd.imgcontent }}
+              <div>
+                <p>{{ .content }}</p>
+                <blockquote class="blockquote">{{ .blockquote }}</blockquote>
+              </div>
+            {{ end }}
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+<section class="our-forte-section">
+    <div class="container-fluid">
+        <h2>Dreams & Mentoring - a Winning Combination</h2>
+        <div class="row">
+            {{ range .Site.Data.lifeatmd.forte }}
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow slideInUpSmooth" data-wow-delay="0.1s">
+                <div class="our-forte-box">
+                    <div class="forte-icon">
+                        <img src="{{ $.Site.BaseURL }}{{ .image }}">
+                    </div>
+                    <div class="forte-content">
+                        <h3>{{ .title }}</h3>
+                        <hr/>
+                        <p>{{ .content }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ partial "igniting-passion.html" . }}

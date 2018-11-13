@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Development on Careers site for MD</title>
+    <link>https://careers-md.netlify.com/categories/web-development/</link>
+    <description>Recent content in Web Development on Careers site for MD</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Oct 2018 17:46:09 +0530</lastBuildDate>
+    
+	<atom:link href="https://careers-md.netlify.com/categories/web-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How can Beacons Help in Retail Stores?</title>
+      <link>https://careers-md.netlify.com/post/how-can-beacons-help-in-enhancing-customers-experience-in-retail-stores/</link>
+      <pubDate>Sat, 27 Oct 2018 17:46:09 +0530</pubDate>
+      
+      <guid>https://careers-md.netlify.com/post/how-can-beacons-help-in-enhancing-customers-experience-in-retail-stores/</guid>
+      <description>We all are aware of the traditional use of beacons such as in lighthouses, police car lights, etc. But with the advancing technology, beacons are nowadays widely used by the retailers for the purpose of advertisement and marketing of their products. Beacons are usually small and they can be placed on the walls of the stores, both in and out. They produce signals which travel one way to nearby mobile devices.</description>
+    </item>
+    
+  </channel>
+</rss>
